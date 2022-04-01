@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html>
+    <script>
+
+        var cantidad = prompt("Ingrese la cantidad de articulos");
+        var articulos = prompt("Ingrese el precio de los articulos");
+        var subtotal = parseInt(cantidad) * articulos;
+        var iva = subtotal * 0.16;
+        var total = subtotal + iva;
+
+        document.write("El valor del iva es: ", iva + "<br>");
+        document.write("El valor del subtotal sin iva es: ", subtotal + "<br>");
+        document.write("El monto total a pagar con iva incluido es: ", total);
+
+    </script>
+</html>

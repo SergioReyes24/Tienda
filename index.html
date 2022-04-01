@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Tienda en línea</title>
+        <meta name="author" content="Sergio Sebastián Reyes Arango" >
+        <meta name="description" content="Tienda de electronicos Pilares">
+        <meta name="keywords" content="Tienda, electronicos, Pilares, computadora de escritorio, aire comprimido, laptop, cerradura digital, usb, camara, cables, mouse">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+
+    <body>
+    
+        <div class="wrap">
+            <div class="widget">
+                <div class="fecha">
+                    <p id="diaSemana" class="diaSemana"></p>
+                    <p id="dia" class="dia"></p>
+                    <p id="mes" class="mes"></p>
+                    <p id="year" class="year"></p>
+                </div>
+        
+                <div class="reloj">
+                    <p id="horas" class="horas"></p>
+                    <p class="puntos">:</p>
+                    <p id="minutos" class="minutos"></p>
+                    <p class="puntos">:</p>
+                    <div class="caja-segundos">
+                        <p id="ampm" class="ampm"></p>
+                        <p id="segundos" class="segundos"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contenedor">
+            <nav>
+                <a class="a" href="index.html">Inicio</a>
+                
+                <a class="a" href="index.html#aire">Categorias</a>
+
+                <a class="a" href="index.html#Departamento">Carrito</a>
+            </nav>
+            
+            <div id="titulo">
+                <h1>Electronicos Pilares</h1>
+            </div>        
+
+            <div id="pc">
+                <img src="./IMG/computadora.png" alt="">
+                <h3>Computadora</h3>
+                <p class="descripcion">
+                    Computadora de marca HP $14,000.
+                </p>
+
+                <p class="boton">
+                Comprar  
+                </p>
+            </div>
+
+            <div id="lap">
+                <img src="./IMG/laptop.png" alt="">
+                <h3>Laptop</h3>
+                <p class="descripcion">
+                    Laptop de marca Samsung $10,000.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="cerradura">
+                <img src="./IMG/impresora.png" alt="">
+                <h3>Impresora</h3>
+                <p class="descripcion">
+                    Impresora de marca Epson $3,000.
+                </p>
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="camara">
+                <img src="./IMG/camara.png" alt="">
+                <h3>Cámara</h3>
+                <p class="descripcion">
+                    Cámara de vigilancia de marca Panasonic $2,000.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="audifonos">
+                <img src="./IMG/audifonos.png" alt="">
+                <h3>Audífonos</h3>
+                <p class="descripcion">
+                    Audífonos de marca HyperX $10,000.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="usb">
+                <img src="../IMG/usb.png" alt="">
+                <h3>Usb</h3>
+                <p class="descripcion">
+                    Usb de marca Kingston $300.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="cable">
+                <img src="./IMG/cable.png" alt="">
+                <h3>Cable ethernet</h3>
+                <p class="descripcion">
+                    Cable ethernet de 10 metros $200.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="mouse">
+                <img src="./IMG/mouse.png" alt="">
+                <h3>Mouse</h3>
+                <p class="descripcion">
+                    Mouse de marca HP $1000.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <div id="aire">
+                <img src="./IMG/aire.png" alt="">
+                <h3>Aire comprimido</h3>
+                <p class="descripcion">
+                    Aire comprimido de marca Aerojet $100.
+                </p> 
+
+                <p class="boton">
+                    Comprar  
+                </p>
+            </div>
+
+            <form action="">
+                <p>
+                    Selecciona el departamento y el precio del artículo:
+                </p>
+    
+                <label for="Departamento">Departamento: </label>
+                <select name="Departamento" id="Departamento" required>
+                    <option value="Computación">Computación</option>
+                    <option value="Herramientas">Herramientas</option>
+                    <option value="Cables">Cables</option>
+                    <option value="Telefonía">Telefonía</option>
+                    <option value="Electronicos">Electronicos</option>
+                </select>
+
+                <br>
+
+                <label for="Precio">Precio del artículo: </label>
+                <input type="number" name="Precio" id="Precio" placeholder="$100 - $14,000" required min="100" max="14000">
+
+                <br>
+                
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+
+            <footer>
+                
+                <div>
+                    <h5>Servicio a clientes</h5>
+                    <p id="redes">
+                        <a class="link" target="blank" href="https://web.whatsapp.com/"> <img class="redes" src="./IMG/wasa.png" alt="Whatsapp">Whatsapp</a>
+                        <br>
+                        <a class="link" target="blank" href="https://www.facebook.com"> <img class="redes" src="./IMG/face.png" alt="Facebook">Facebook</a>
+                        <br>
+                        <a class="link" target="blank" href="https://twitter.com/"> <img class="redes" src="./IMG/twitter.png" alt="Twitter">Twitter</a>
+                        <br>
+                        <a class="link" target="blank" href="https://www.instagram.com/"> <img class="redes" src="./IMG/insta.png" alt="Instagram">Instagram</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h5>Políticas de privacidad</h5>
+                    <p>
+                    POLÍTICAS
+                    <br>
+                    POLÍTICAS DE VENTA
+                    <br>
+                    TÉRMINOS Y CONDICIONES
+                    <br>
+                    AVISO DE PRIVACIDAD
+                    <br>
+                    INFORMACIÓN DE GARANTÍAS EXTENDIDAS
+                    <br>
+                    TÉRMINOS Y CONDICIONES
+                    </p>
+                </div>
+                
+            </footer>
+
+            <script src="./JS/script.js"></script>
+
+        </div>
+
+    </body>
+
+</html>
+
